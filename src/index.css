@@ -1,0 +1,107 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  margin-top: 100px;
+  padding: 0;
+}
+
+#logo-image {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* General reset for ul and li */
+ul#catalog {
+  list-style-type: none; /* Removes bullets */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  display: flex; /* Enables Flexbox layout */
+  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+  gap: 20px; /* Adds space between the cards */
+  justify-content: center; /* Centers cards within the container */
+}
+
+/* Individual card styling */
+ul#catalog li {
+  background-color: #fff; /* Sets background for the card */
+  border: 1px solid #ddd; /* Adds a subtle border */
+  border-radius: 8px; /* Rounds the corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+  overflow: hidden; /* Ensures content doesn't overflow the card */
+  padding: 15px; /* Adds padding inside the card */
+  text-align: center; /* Centers text content */
+  width: 200px; /* Fixed width for cards */
+  display: flex; /* Enables Flexbox within the card */
+  flex-direction: column; /* Aligns content vertically */
+  align-items: center; /* Centers content horizontally */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+ul#catalog li.single-book-card {
+  width: 450px;
+}
+
+/* Card hover effect */
+ul#catalog li:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Increases shadow on hover */
+}
+
+/* Title styling */
+ul#catalog .title {
+  font-size: 1.2rem; /* Adjusts title font size */
+  font-weight: bold; /* Makes title bold */
+  color: #333; /* Sets text color */
+  margin-bottom: 10px; /* Adds space below the title */
+}
+
+/* Image styling */
+ul#catalog img {
+  max-width: 100%; /* Ensures image doesn't overflow the card */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 4px; /* Slight rounding of image corners */
+}
+
+header {
+  position: fixed; /* Keeps the header at the top of the page */
+  top: 0;
+  left: 0;
+  width: 100%; /* Spans the full width of the viewport */
+  background-color: #333; /* Dark background for contrast */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Navbar container */
+#navbar {
+  display: flex; /* Horizontally align links */
+  justify-content: space-around; /* Spread links evenly */
+  align-items: center; /* Center links vertically */
+  padding: 10px 20px; /* Add some spacing */
+}
+
+/* Hyperlink styling */
+#navbar a {
+  text-decoration: none; /* Removes the underline */
+  color: white; /* White text for visibility */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold;
+  padding: 10px 15px; /* Adds padding around links */
+  border-radius: 5px; /* Rounds the edges slightly */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+#navbar a:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+  color: #ddd; /* Lighter text color on hover */
+}
+
+.available {
+  color : rgb(12, 134, 12);
+}
+
+.checked-out {
+  color: rgb(159, 0, 0);
+}
