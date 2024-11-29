@@ -5,9 +5,8 @@ You may consider conditionally rendering a message for other users that prompts 
 import { useEffect } from "react";
 import { getUserMe } from "../API";
 import Reservations from "./Reservations";
-import { Navigate } from "react-router-dom";
 
-export default function Account({token, setToken, user, setUser}){
+export default function Account({token, user, setUser}){
     useEffect(() => {
         async function fetchUser(tk) {
             setUser(await getUserMe(tk));

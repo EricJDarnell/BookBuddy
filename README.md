@@ -11,4 +11,4 @@ API link for books her https://fsa-book-buddy-b6e748d1380d.herokuapp.com/api/boo
 log in as admin@admin pass:123admin to be able to make books available again.
 
 Deployed App:
-https://jocular-snickerdoodle-e4735c.netlify.app
+https://brilliant-babka-624903.netlify.app

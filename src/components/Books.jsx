@@ -21,7 +21,7 @@ export default function Books({ setBookId, user, token }) {
 
   return (
     <>
-      <SearchBar catalog={catalog}/>
+      <SearchBar catalog={catalog} setBookId={setBookId}/>
       <h2>Catalog</h2>
         <ul id="catalog">
           {catalog.length ? (
